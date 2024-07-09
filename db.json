@@ -1,0 +1,76 @@
+{
+  "videos": [
+    {
+      "id": "1",
+      "title": "HTML5",
+      "category": "frontend",
+      "image": "https://silvrback.s3.amazonaws.com/uploads/df397458-d2f5-47df-902f-02ffb22dbb93/html5-web-applications-by-ewaycorp-small_large.jpg",
+      "video": "https://www.youtube.com/watch?v=6HfnkwkZ0Ss",
+      "videoUrl": "https://www.youtube.com/watch?v=6HfnkwkZ0Ss",
+      "description": "Lorem ipsum dolor sit amet. Aut molestiae culpa qui quos doloremque sit dolores blanditiis! In autem inventore ut perspiciatis quam et error natus. Et perferendis quasi qui autem quisquam vel tenetur fugiat. Qui voluptatem eveniet sed eaque sequi qui mollitia perferendis."
+    },
+    {
+      "id": "2",
+      "title": "CSS3",
+      "category": "frontend",
+      "image": "https://www.devmedia.com.br/arquivos/cursos/css_flexbox_2447/thumb.png",
+      "video": "https://www.youtube.com/watch?v=6HfnkwkZ0Ss",
+      "videoUrl": "https://www.youtube.com/watch?v=6HfnkwkZ0Ss",
+      "description": "Lorem ipsum dolor sit amet. Aut molestiae culpa qui quos doloremque sit dolores blanditiis! In autem inventore ut perspiciatis quam et error natus. Et perferendis quasi qui autem quisquam vel tenetur fugiat. Qui voluptatem eveniet sed eaque sequi qui mollitia perferendis."
+    },
+    {
+      "id": "3",
+      "title": "JavaScript",
+      "category": "frontend",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Javascript.jpg",
+      "video": "https://www.youtube.com/watch?v=6HfnkwkZ0Ss",
+      "videoUrl": "https://www.youtube.com/watch?v=6HfnkwkZ0Ss",
+      "description": "Lorem ipsum dolor sit amet. Aut molestiae culpa qui quos doloremque sit dolores blanditiis! In autem inventore ut perspiciatis quam et error natus. Et perferendis quasi qui autem quisquam vel tenetur fugiat. Qui voluptatem eveniet sed eaque sequi qui mollitia perferendis."
+    },
+    {
+      "id": "4",
+      "title": "Python",
+      "category": "backend",
+      "image": "https://pimylifeup.com/wp-content/uploads/2019/11/variables-in-python-thumbnail-nowm-525x310.jpg",
+      "video": "https://www.youtube.com/watch?v=6HfnkwkZ0Ss",
+      "videoUrl": "https://www.youtube.com/watch?v=6HfnkwkZ0Ss",
+      "description": "Lorem ipsum dolor sit amet. Aut molestiae culpa qui quos doloremque sit dolores blanditiis! In autem inventore ut perspiciatis quam et error natus. Et perferendis quasi qui autem quisquam vel tenetur fugiat. Qui voluptatem eveniet sed eaque sequi qui mollitia perferendis."
+    },
+    {
+      "id": "5",
+      "title": "C#",
+      "category": "backend",
+      "image": "https://hermes.dio.me/articles/cover/29dee9b0-ad51-48d8-a795-33e5161449eb.png",
+      "video": "https://www.youtube.com/watch?v=6HfnkwkZ0Ss",
+      "videoUrl": "https://www.youtube.com/watch?v=6HfnkwkZ0Ss",
+      "description": "Lorem ipsum dolor sit amet. Aut molestiae culpa qui quos doloremque sit dolores blanditiis! In autem inventore ut perspiciatis quam et error natus. Et perferendis quasi qui autem quisquam vel tenetur fugiat. Qui voluptatem eveniet sed eaque sequi qui mollitia perferendis."
+    },
+    {
+      "id": "6",
+      "title": "SQL",
+      "category": "backend",
+      "image": "https://www.simplilearn.com/ice9/free_resources_article_thumb/difference_between_sql_and_mysql.jpg",
+      "video": "https://www.youtube.com/watch?v=6HfnkwkZ0Ss",
+      "videoUrl": "https://www.youtube.com/watch?v=6HfnkwkZ0Ss",
+      "description": "Lorem ipsum dolor sit amet. Aut molestiae culpa qui quos doloremque sit dolores blanditiis! In autem inventore ut perspiciatis quam et error natus. Et perferendis quasi qui autem quisquam vel tenetur fugiat. Qui voluptatem eveniet sed eaque sequi qui mollitia perferendis."
+    },
+    {
+      "id": "7",
+      "title": "Kotlin",
+      "category": "mobile",
+      "image": "https://silvrback.s3.amazonaws.com/uploads/0f11ba64-5b55-4e0f-b4fb-4c5faf611c7b/kotlin_800x320.png",
+      "video": "https://www.youtube.com/watch?v=6HfnkwkZ0Ss",
+      "videoUrl": "https://www.youtube.com/watch?v=6HfnkwkZ0Ss",
+      "description": "Lorem ipsum dolor sit amet. Aut molestiae culpa qui quos doloremque sit dolores blanditiis! In autem inventore ut perspiciatis quam et error natus. Et perferendis quasi qui autem quisquam vel tenetur fugiat. Qui voluptatem eveniet sed eaque sequi qui mollitia perferendis."
+    },
+    {
+      "id": "8",
+      "title": "Java",
+      "category": "mobile",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZovPwmAR1857w_8q-x2BgNJ-ljJm73v1-9w&s",
+      "video": "https://www.youtube.com/watch?v=6HfnkwkZ0Ss",
+      "videoUrl": "https://www.youtube.com/watch?v=6HfnkwkZ0Ss",
+      "description": "Lorem ipsum dolor sit amet. Aut molestiae culpa qui quos doloremque sit dolores blanditiis! In autem inventore ut perspiciatis quam et error natus. Et perferendis quasi qui autem quisquam vel tenetur fugiat. Qui voluptatem eveniet sed eaque sequi qui mollitia perferendis."
+    }
+  ]
+}
