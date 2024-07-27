@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import db from '../../db.json';
 import './index.css';
 
 const AddVideoForm = () => {
@@ -16,33 +17,24 @@ const AddVideoForm = () => {
   const [videoUrl, setVideoUrl] = useState(initialFormState.videoUrl);
   const [description, setDescription] = useState(initialFormState.description);
 
-  const handleSubmit = async (event) => {
+  const handleSubmit = (event) => {
     event.preventDefault();
+
     const newVideo = {
+      id: db.videos.length + 1,
       title,
       category,
       image: imageUrl,
-      video: videoUrl,
+      videoUrl,
       description
     };
 
-    try {
-      const response = await fetch('http://localhost:5000/videos', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(newVideo),
-      });
+    
+    db.videos.push(newVideo);
 
-      if (!response.ok) {
-        throw new Error('Erro ao adicionar vídeo');
-      }
-      clearFormFields();
-      window.location.reload();
-    } catch (error) {
-      console.error('Erro ao adicionar vídeo:', error);
-    }
+    
+    console.log('Vídeo adicionado:', newVideo);
+    clearFormFields();
   };
 
   const clearFormFields = () => {

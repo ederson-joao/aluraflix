@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import EditForm from '../editVideo/index';
 import edit from '../../img/edit.png';
 import delet from '../../img/delet.png';
+import db from '../../db.json'; // Supondo que o arquivo db.json está na pasta src
 import './index.css';
 
 function Category() {
@@ -10,38 +11,22 @@ function Category() {
   const [editing, setEditing] = useState(false); 
 
   useEffect(() => {
-    fetch('http://localhost:5000/videos')
-      .then(response => response.json())
-      .then(data => {
-        setVideos(data); 
-        const firstFrontendVideo = data.find(video => video.category === 'frontend');
-        if (firstFrontendVideo) {
-          setSelectedVideo(firstFrontendVideo);
-        }
-      })
-      .catch(error => {
-        console.error('Error fetching videos:', error);
-      });
+    // Substitua a chamada fetch pela importação direta do db.json
+    const data = db.videos; // Ajuste se a estrutura do JSON for diferente
+    setVideos(data); 
+    const firstFrontendVideo = data.find(video => video.category === 'frontend');
+    if (firstFrontendVideo) {
+      setSelectedVideo(firstFrontendVideo);
+    }
   }, []);
 
   const handleDelete = (id) => {
     console.log(`Deleting video with ID: ${id}`);
-    fetch(`http://localhost:5000/videos/${id}`, {
-      method: 'DELETE',
-    })
-      .then(response => {
-        if (response.ok) {
-          setVideos(videos.filter(video => video.id !== id));
-          if (selectedVideo && selectedVideo.id === id) {
-            setSelectedVideo(null);
-          }
-        } else {
-          console.error('Failed to delete video');
-        }
-      })
-      .catch(error => {
-        console.error('Error deleting video:', error);
-      });
+    const updatedVideos = videos.filter(video => video.id !== id);
+    setVideos(updatedVideos);
+    if (selectedVideo && selectedVideo.id === id) {
+      setSelectedVideo(null);
+    }
   };
 
   const handleEdit = (id) => {
@@ -51,27 +36,11 @@ function Category() {
   };
 
   const handleSaveEdit = (updatedData) => {
-    fetch(`http://localhost:5000/videos/${selectedVideo.id}`, {
-      method: 'PUT',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(updatedData),
-    })
-      .then(response => {
-        if (response.ok) {
-          const updatedVideos = videos.map(video =>
-            video.id === selectedVideo.id ? { ...video, ...updatedData } : video
-          );
-          setVideos(updatedVideos);
-          setEditing(false);
-        } else {
-          console.error('Failed to update video');
-        }
-      })
-      .catch(error => {
-        console.error('Error updating video:', error);
-      });
+    const updatedVideos = videos.map(video =>
+      video.id === selectedVideo.id ? { ...video, ...updatedData } : video
+    );
+    setVideos(updatedVideos);
+    setEditing(false);
   };
 
   const handleVideoClick = (video) => {
